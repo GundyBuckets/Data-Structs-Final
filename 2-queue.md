@@ -10,17 +10,19 @@ A queue is a fundamental data structure that operates on the principle of First-
 
 ## Queue Operations
 The primary operations performed on a queue are:
-- **Enqueue(item)**: Adds an element to the rear (end) of the queue.
-- **Dequeue()**: Removes and returns the element at the front of the queue.
-- **Peek() / Front()**: Returns the element at the front of the queue without removing it.
-- **IsEmpty()**: Checks if the queue contains any elements and returns a boolean value (true if empty, false otherwise).
+- **.Enqueue(item)**: Adds an element to the rear (end) of the queue.
+- **.Dequeue()**: Removes and returns the element at the front of the queue.
+- **.Peek()**: Returns the element at the front of the queue without removing it.
+- **.IsEmpty()**: Checks if the queue contains any elements and returns a boolean value (true if empty, false otherwise).
+
+> _Note: All these operations are O(n)._
 
 ## Visual Representation
 Here's a visual representation of a queue:
 ```
-+------+------+------+------+------+
-|      |      |      |      |      | <-- Rear
-+------+------+------+------+------+
++-------------+-------------+-------------+-------------+
+| 1st Element | 2nd Element | 3rd Element | 4th Element | <-- Rear
++-------------+-------------+-------------+-------------+
 Front
 ```
 
@@ -183,7 +185,7 @@ public class PrintQueueSimulator
 ## Practice Problem: Simulating a Customer Service Queue
 
 ### Problem Description:
-A customer service center handles customer inquiries. Customers can submit inquiries, and customer service representatives process them in the order they are received. Simulate this process using a queue.
+A customer service center handles customer inquiries. Customers can submit inquiries, and customer service representatives process them in the order they are received. Simulate this process using a queue and making a menu with options for the user.
 
 ### Requirements:
 1. Create a queue to represent the customer service queue.
